@@ -1,30 +1,14 @@
-package culturemedia.model;
+package culturemedia.dto;
 
-import jakarta.persistence.*;
-import java.util.List;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-@Entity
-@Table(name = "users")
-public class User {
+public class SignUpDto {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
     private String firstName;
     private String lastName;
     private String email;
     private String username;
-    @JsonIgnore
     private String password;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getFirstName() {
         return firstName;
