@@ -28,7 +28,7 @@ public class VideoRepositoryImpl implements VideoRepository {
     public List<Video> find(String title) {
         List<Video> filteredVideos = null;
         for ( Video video : videos ) {
-            if(video.title().toLowerCase().contains( title.toLowerCase() )){
+            if(video.getTitle().toLowerCase().contains( title.toLowerCase() )){
                 if(filteredVideos == null){
                     filteredVideos = new ArrayList<Video>();
                 }
@@ -43,7 +43,7 @@ public class VideoRepositoryImpl implements VideoRepository {
     public List<Video> find(Double fromDuration, Double toDuration) {
         List<Video> filteredVideos = new ArrayList<Video>();
         for ( Video video : videos ) {
-            if(video.duration() >= fromDuration && video.duration() <= toDuration){
+            if(video.getDuration() >= fromDuration && video.getDuration() <= toDuration){
                 filteredVideos.add(video);
 
             }
