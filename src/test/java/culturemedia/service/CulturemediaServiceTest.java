@@ -4,7 +4,7 @@ import culturemedia.exception.VideoNotFoundException;
 import culturemedia.model.Video;
 import culturemedia.repository.VideoRepository;
 import culturemedia.repository.ViewRepository;
-import culturemedia.repository.impl.VideoRepositoryImpl;
+//import culturemedia.repository.impl.VideoRepositoryImpl;
 import culturemedia.repository.impl.ViewRepositoryImpl;
 import culturemedia.sevice.CulturemediaService;
 import culturemedia.sevice.impl.CulturemediaServiceImpl;
